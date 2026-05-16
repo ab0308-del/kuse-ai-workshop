@@ -145,22 +145,97 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);overflow:hidd
   </div>
 </div>
 
-<!-- S6 AI MODELS -->
+<!-- S6 對話模型 -->
 <div class="slide" style="background:linear-gradient(135deg,#1A1A3E,#2D2D6B);flex-direction:column;overflow:hidden;">
   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAAA+CAYAAAC2n/CQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAxuSURBVHhe7dx5VFPHHgfwLy4FEhdcUNlEBUVZXMvTulRRQepurYq1KrjyXLpa6w4qKrsgirhAURCXuhXBtW4oggQEqyKI+lSgKKAEwUBoT3l/CDe5Y4CbkBDimc85OSfzm7nx1H4z3jszoPVOmFcJhhYqUQktSYGiGpUmkrdaAA0r1chJBVZqoqWoRqrJ+5mVojRDEzqzUppE6paAoho/GlhKo9DAUhqFBpbSKDSwlEahgaU0Cg0spVFoYCmNQgNLaRQt9mkt5Xj85Cmev8iBUChEUZEQ4ooKfNK8OczNu6G7uRmMjQzJS1SOP/k0WVJI0W+TEJsTgIdFCWQXZ7YdxsLe2JksUxwoLbAFBYU4fjIa0THn8CI7h+xm0dNrDcteFujbxwbjHB3QpUtncojSKTuwgvyzZBcndkazaFjrQSm3BDGxFzB+ykzs3L2vzrACgFBYjFsJSQgOCcW4yTMwa+4inDgVjbLycnLoR2VkVVg3RKSTXRRH9QqsSCTCkm9X4Je17igtLSW7OUu7ew8bNm7DaMfJCD8YhXKxmByi8UYazcLoqrD6nXhEdlMcKRzYoiIhvnF2xfW4eLJLYUJhMXz8g+A4/isIku+Q3RqLhlV5FApsYeFrTJvpjMxHWWSXUhQUFMJ5wVIciDxCdmmckcY0rMqkUGBXrduEvJevyLLSefsGYquXP1nWGCONv8FoIxpWZZI7sAcPHUVCYhJZVplDh39DWHgkWW707IxmYbTRXBpWJZMrsEJhMQJ2BJNllfML2IVrcTfJcqNVvXTlFvmQhlXJ5Aps5OFjEIsryHKD8PbdgcpKpSwZq5R0WH2PZ5LdVD1x3jgoKy+Hnf0ElJQovnxVX/4+WzDGfiRZ5qQhNg4kYU2H7/HaZ9Z3pyeTpVo5z1/CvA8P/fBfuWfPs7HRwwuV//4LAJg0cSymTBqPjMwseHpvBwB07myCTW6riSslbiclY/eeMACAtbUlVvywjNUfe/YCIqKO4d799+vIHTvoo7OJMUxNTTBi+FDYDR/GGi+ttLQU5y9ewaXLV/Ho0RMUvy2GuVk3DBpoi4njHWFu1o28RCbOM2xKSppawwoAe/eHk6VGQ56wKkKQksq8yHVqobAYrkt/QJIgBYKUVPD4PEyZNB4AUFJSwlxXHbSaFL5+w4x9lPWYqYvFFXBesBQr17izPuNVfgEEKak4fjIay75biXmLlkMoLGb6q/n4B2HgUHu4bdqGm/GJyC8ogFhcgQfpGQj9NQKTps6Cy8JlMq8lcQ5sYlIyWWpwGZlZeJVfQJbVTtVhrU25WIxFS75Hdk4uAKBPb2v4+2whh9XLFk+/D9bFrSx7wnZAP/B0dZna7aRkhB04xBq30cML4QejWLUupiawHdAPhgadmFqSIAXOC5ayxsnCObApd9LIklrcuKn4oRNVUEdYtaR+l8TKVRvwID0DAGBm1hUhO/2ho60tNVpCS6v230Ehq18kEuHEqWimvcR1PlJuX8OxqF8RHhqMuKtnsX7NzzDo1BGdOnaA6yIXZuwfV67j2HHJrdiE8Y4QJFxB7O/HEB4ajEvnTsHTww3t2rUFAGQ9foKAoBBmvCycA1tQUEiW1OJmfOMJrDrCCgCVVb9Lwts3EJevxgEADDp1xP6QQLRq1ZIYLVHXQ6us/rw89nr7UtcFrC+Ero4OnKZ/ieiTUdix3Ys14wbt2su8t/20Pzw93Fj9qApxoN82pn346AmIyspYY6RxDuw7kYgsqcWz59lkSS1GGH4Ne2NnuEc+bNCwomqGjTpynNkJbN26FfaH7EAHfX1yKIusGVSarH4Dg46sdkBQCIqKhKwaAPB4PFhZ9mTaD9Iz8PjJU6b93bLFzHtSv769MaBfH6Dq4exmfCI5hME5sOWN5CRVkfDDv6yGxm+uBwcTF7hHPoSPGpaurl6/gS2efkDVDBey05/TEU1ZM6g0Wf08Hg/jxo5h2vtCD2Co3ReYNXcRIqKOIv2h7P/+xNsCVruiogKC5Ds1vgyNDJixtd1+cg5sEy3OQ1WqsPA1WWpwDsbqCysA/LRyHfN+vsts9LaxYvXXRNYMKq2m/g1rVsBhtB2rlnb3Hjy9AzBtpjO+mDANByKP4O3bEqb/DTELz1u0HM4Lltb4OhNznhmbm5vHulYa5xTq67cnS2rDZfmDVHhsglJe1cor/mF9vrqEhUeylqBUoUWLFtjuuxWHDuzFgnlzYGbWldX/IjsH3r6BmO3iyhwzbdasGWuMPN4UFZElBueNgzkurkhJvUuW1SL+2nno6bUmy7WKT38N2558xD7fTXbJrVXz9hhlPBurwu4hKPoJ2c2JvBsHVn0/Y7X79rFB2t17QNUC/tFDYTInFUFKKrPp0K1bF5w5eZgcwjgTcx6r1m0EAAwdMgh7dr3fcJAlJfUu/vzzPqJjzrO+MFOnTMQmt9WIjDqGbVUbFgCwPySQc4j5fD4se1mQZUCewK5c7YbYcxfJslo8SJN/pYA/+TQubh0Ga/NKHMxchzyRYkGrNspoTr1CW5/ABvp7YuiQQZg777+4/+AhAKCnRXdEhO/54Cn8YcYjfOU0l2nX9ncXEBSCfaEHAACODqPg5+1BDpFpX+gBZjmKp6sLQcIVPEjPwPSvJUtcEeF70L9vb6mrFMP5lsDKqhdZUos2bfTIEmdTNyfi/mMtzLHwgAHPjOyWy+Xcg7icEwHPeTZYPrF+nyWvYUM+g462NoJ3+MKg0/un+IzMLPz8ywZyKExNTVjtmNgLrHa1crEYZ2LOMW3p6y7+cRUZmTWffZ42VfLlE5WVQSQSwcqyJ7pIfcaOnXuY9zXhspPKObCD/jOALKlF27ZtyBJnJWV/fzShBYB27dpi904/Zla9FncTXj4BrDE8XV0MGmjLtLf5bGc2GqqVi8X4ZbUbXr7KZ2rjHB2Aqo2DzVt9MHXGHOzZFw6RjOXNS5evMe876OuDx+MBAFwXzmPqguQ7+P6n1SgufsvUqj19+gyuy37EmvWbya4PcL4lAIDBw8fI/AMb0rixY+C91Z0s10n68EtL3eY4sX6QWm8P6nNLcOf2dWhrf8K0b9xMgOuyH5n2+jU/w2n6l0w7SZACl4Xsgyx2w4eha1dTFBUJkXInjfXDoyNHfI6gAC8AQHBIKHaF7Je6EhgyeCC6m5uBx9PF8xc5iD0rmbW/XboYixdKfirYxz+ItTXbpo0ezLtJHtryXr5CTu5fTNtrizvGj5Mso5Garl21gvP//RfZOTWuuzWUhS6z0aO7OVmu09Yjklml4p9/cfpWHuxsTGDfYySevk1D6d81P5nW5X8ldwFoYdFwe5SI/kZSZt2ftdZJssjORXBIKPN+8UIXNGvWlGmbdjZB61atmAX3uBu30MfGGp07GwMAjIwM0dvaCtfi4lFR8f546LPnL5Ca9icyMh+h+K1kEho00BaeW9ygo6MDAOjR3Rz30zOQKxWq7OxcpN29B0FyKrKyJF/QcWPHYPXK75k2AAz5bCD4fD5uJdwGqtbz/8p7ybzelkiWwowMDfD1zGnQb99O6hPY5JphyRvphqalpYXEGxfRokULsqtOso4XqnOmlXeGret4IQAE7tyD1KqVHB6fB08PN9ZW7av8Avj6ByExKRlv3rC/VNZWvbBk8XwM/3wIq14t7sYtnPo9BvEJSXj37h1Tb9myBT7t3w9zZzvB9tP+rGuk5f6Vh9BfI3Dh0pUPliUte1lgrKM9nGZMhW7VF6UmcgUWAKbOmFPrDbgqSf9TJS9ZgYUaQytvYKn3OD90VVs4X7JE0tB+Ig4UK8PH9iD2sZM7sI4OozBk8ECyrHJO079kLZMoEw2t5pA7sACw2X1tjWcuVcGiR3es+HE5WVYqGlrNoFBgO3bQx3bfrWjaVPKkqipdTE0QtjeozptxZaChbfwUCiwAfD5sMOetO0U5OoxC+P5guc8N1AcNbeOmcGABwH7UCOwNDkD7WtbNFGHZywLhocHw8/aQeaBD1WhoGy+5l7VkKSkphYenb4371FzoaGvDccxozJg2hfP5TnnUtKxVG1UueXnOsyG7KQ6UEthqz55n48LFy/jjyrVad8R0dXRgZGQIc7OusLGxQm8bK6Wc5KmNIoGFCkNLKUapgZUmEonw5OkzvMjOQX5+AXpadAefz4eRoQHzU5INSdHAVlPF0URKfioLLEWpQr0euiiqodHAUhqFBpbSKDSwlEahgaU0Cg0spVFoYCmNQgNLaRQaWEqj0MBSGoUGltIo/wfAEWcCBtWQrwAAAABJRU5ErkJggg==" class="logo-corner" alt="Logo">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(167,139,250,.15) 0%,transparent 70%);"></div>
-  <div style="text-align:center;margin-bottom:28px;position:relative;z-index:1;">
-    <div style="background:rgba(167,139,250,.2);color:#C4B5FD;padding:7px 22px;border-radius:16px;display:inline-block;font-size:13px;font-weight:700;margin-bottom:14px;">🧠 六大頂尖 AI 模型</div>
-    <h2 style="font-size:40px;font-weight:900;color:white;">根據需求自由切換，<span style="color:#FFD166;">注意點數消耗！</span></h2>
+  <div style="text-align:center;margin-bottom:20px;position:relative;z-index:1;">
+    <div style="background:rgba(167,139,250,.2);color:#C4B5FD;padding:6px 20px;border-radius:16px;display:inline-block;font-size:13px;font-weight:700;margin-bottom:10px;">💬 對話模型</div>
+    <h2 style="font-size:36px;font-weight:900;color:white;">備課、教案、分析都靠它，<span style="color:#FFD166;">認清每款特性！</span></h2>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;width:100%;max-width:1050px;position:relative;z-index:1;">
-    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);"><div style="font-size:28px;margin-bottom:8px;">⚡</div><h3 style="font-size:15px;font-weight:900;color:#FFD166;margin-bottom:4px;">Gemini 3.0 Flash</h3><div style="background:rgba(78,205,196,.2);color:#4ECDC4;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:8px;">點數省 💚</div><p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;">極速生成，適合日常碎片化備課與快速問答</p></div>
-    <div class="card" style="background:rgba(255,255,255,.08);border:2px solid var(--orange);backdrop-filter:blur(10px);"><div style="font-size:28px;margin-bottom:8px;">📄</div><h3 style="font-size:15px;font-weight:900;color:#FF7B44;margin-bottom:4px;">Claude Sonnet 4.5</h3><div style="background:rgba(255,123,68,.2);color:#FF7B44;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:8px;">⭐ 預設推薦</div><p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;">最擅長長文分析與結構化整理，長篇閱讀測驗最佳助手</p></div>
-    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);"><div style="font-size:28px;margin-bottom:8px;">⚙️</div><h3 style="font-size:15px;font-weight:900;color:#93C5FD;margin-bottom:4px;">Gemini 3.1 Pro</h3><div style="background:rgba(75,159,225,.2);color:#93C5FD;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:8px;">點數適中 💙</div><p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;">邏輯推理強，適合複雜教案設計與跨領域整合</p></div>
-    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);"><div style="font-size:28px;margin-bottom:8px;">🖼️</div><h3 style="font-size:15px;font-weight:900;color:#FCA5A5;margin-bottom:4px;">Nano Banana 2.0</h3><div style="background:rgba(252,165,165,.2);color:#FCA5A5;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:8px;">圖像生成 🎨</div><p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;">專為高畫質圖像生成設計，輕鬆打造精美插圖簡報</p></div>
-    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);"><div style="font-size:28px;margin-bottom:8px;">💡</div><h3 style="font-size:15px;font-weight:900;color:#6EE7B7;margin-bottom:4px;">GPT-5.3 / 5.4</h3><div style="background:rgba(110,231,183,.2);color:#6EE7B7;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:8px;">高品質創意 ✨</div><p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;">OpenAI 最新模型，極高品質、極具創意的文本與分析</p></div>
-    <div class="card" style="background:rgba(255,100,100,.08);border:1px solid rgba(255,100,100,.3);backdrop-filter:blur(10px);"><div style="font-size:28px;margin-bottom:8px;">🧠</div><h3 style="font-size:15px;font-weight:900;color:#FCA5A5;margin-bottom:4px;">Claude Opus 4.6</h3><div style="background:rgba(255,100,100,.2);color:#FCA5A5;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:8px;">⚠️ 點數多，節省用！</div><p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;">深度思考模型，非常聰明，適合嚴謹學科，但消耗點數多</p></div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%;max-width:1060px;position:relative;z-index:1;">
+    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:18px 20px;">
+      <div style="font-size:26px;margin-bottom:6px;">⚡</div>
+      <h3 style="font-size:15px;font-weight:900;color:#FFD166;margin-bottom:3px;">Gemini 3.0 Flash</h3>
+      <div style="background:rgba(78,205,196,.2);color:#4ECDC4;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:7px;">點數省 💚</div>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;">極速生成、輕量高效<br>→ 日常備課、快速問答</p>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:18px 20px;">
+      <div style="font-size:26px;margin-bottom:6px;">🪶</div>
+      <h3 style="font-size:15px;font-weight:900;color:#A5F3FC;margin-bottom:3px;">Gemini 3.1 Flash-Lite</h3>
+      <div style="background:rgba(165,243,252,.2);color:#A5F3FC;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:7px;">點數極省 💚💚</div>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;">最輕量、速度最快<br>→ 大量批次任務、超簡單問答</p>
+    </div>
+    <div class="card" style="background:rgba(255,123,68,.1);border:2px solid var(--orange);backdrop-filter:blur(10px);padding:18px 20px;">
+      <div style="font-size:26px;margin-bottom:6px;">📄</div>
+      <h3 style="font-size:15px;font-weight:900;color:#FF7B44;margin-bottom:3px;">Claude Sonnet 4.6</h3>
+      <div style="background:rgba(255,123,68,.2);color:#FF7B44;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:7px;">⭐ 預設推薦</div>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;">長文分析與結構化整理<br>→ 閱讀測驗、教案長篇</p>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:18px 20px;">
+      <div style="font-size:26px;margin-bottom:6px;">⚙️</div>
+      <h3 style="font-size:15px;font-weight:900;color:#93C5FD;margin-bottom:3px;">Gemini 3.1 Pro</h3>
+      <div style="background:rgba(75,159,225,.2);color:#93C5FD;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:7px;">點數適中 💙</div>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;">邏輯推理強、多模態<br>→ 複雜教案、跨領域整合</p>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:18px 20px;">
+      <div style="font-size:26px;margin-bottom:6px;">💡</div>
+      <h3 style="font-size:15px;font-weight:900;color:#6EE7B7;margin-bottom:3px;">GPT-5.4 Thinking</h3>
+      <div style="background:rgba(110,231,183,.2);color:#6EE7B7;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:7px;">高創意 ✨ 點數較多</div>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;">鏈式推理、高品質高創意<br>→ 數學、邏輯、複雜分析</p>
+    </div>
+    <div class="card" style="background:rgba(255,100,100,.08);border:1px solid rgba(255,100,100,.3);backdrop-filter:blur(10px);padding:18px 20px;">
+      <div style="font-size:26px;margin-bottom:6px;">🧠</div>
+      <h3 style="font-size:15px;font-weight:900;color:#FCA5A5;margin-bottom:3px;">Claude Opus 4.6</h3>
+      <div style="background:rgba(255,100,100,.2);color:#FCA5A5;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:7px;">⚠️ 點數多，節省使用！</div>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;">深度思考、最強推理<br>→ 嚴謹學科、學術研究</p>
+    </div>
   </div>
+</div>
+
+<!-- S7 圖像生成模型 -->
+<div class="slide" style="background:linear-gradient(135deg,#1A2E3E,#1E3A5F);flex-direction:column;overflow:hidden;">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAAA+CAYAAAC2n/CQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAxuSURBVHhe7dx5VFPHHgfwLy4FEhdcUNlEBUVZXMvTulRRQepurYq1KrjyXLpa6w4qKrsgirhAURCXuhXBtW4oggQEqyKI+lSgKKAEwUBoT3l/CDe5Y4CbkBDimc85OSfzm7nx1H4z3jszoPVOmFcJhhYqUQktSYGiGpUmkrdaAA0r1chJBVZqoqWoRqrJ+5mVojRDEzqzUppE6paAoho/GlhKo9DAUhqFBpbSKDSwlEahgaU0Cg0spVFoYCmNQgNLaRQt9mkt5Xj85Cmev8iBUChEUZEQ4ooKfNK8OczNu6G7uRmMjQzJS1SOP/k0WVJI0W+TEJsTgIdFCWQXZ7YdxsLe2JksUxwoLbAFBYU4fjIa0THn8CI7h+xm0dNrDcteFujbxwbjHB3QpUtncojSKTuwgvyzZBcndkazaFjrQSm3BDGxFzB+ykzs3L2vzrACgFBYjFsJSQgOCcW4yTMwa+4inDgVjbLycnLoR2VkVVg3RKSTXRRH9QqsSCTCkm9X4Je17igtLSW7OUu7ew8bNm7DaMfJCD8YhXKxmByi8UYazcLoqrD6nXhEdlMcKRzYoiIhvnF2xfW4eLJLYUJhMXz8g+A4/isIku+Q3RqLhlV5FApsYeFrTJvpjMxHWWSXUhQUFMJ5wVIciDxCdmmckcY0rMqkUGBXrduEvJevyLLSefsGYquXP1nWGCONv8FoIxpWZZI7sAcPHUVCYhJZVplDh39DWHgkWW707IxmYbTRXBpWJZMrsEJhMQJ2BJNllfML2IVrcTfJcqNVvXTlFvmQhlXJ5Aps5OFjEIsryHKD8PbdgcpKpSwZq5R0WH2PZ5LdVD1x3jgoKy+Hnf0ElJQovnxVX/4+WzDGfiRZ5qQhNg4kYU2H7/HaZ9Z3pyeTpVo5z1/CvA8P/fBfuWfPs7HRwwuV//4LAJg0cSymTBqPjMwseHpvBwB07myCTW6riSslbiclY/eeMACAtbUlVvywjNUfe/YCIqKO4d799+vIHTvoo7OJMUxNTTBi+FDYDR/GGi+ttLQU5y9ewaXLV/Ho0RMUvy2GuVk3DBpoi4njHWFu1o28RCbOM2xKSppawwoAe/eHk6VGQ56wKkKQksq8yHVqobAYrkt/QJIgBYKUVPD4PEyZNB4AUFJSwlxXHbSaFL5+w4x9lPWYqYvFFXBesBQr17izPuNVfgEEKak4fjIay75biXmLlkMoLGb6q/n4B2HgUHu4bdqGm/GJyC8ogFhcgQfpGQj9NQKTps6Cy8JlMq8lcQ5sYlIyWWpwGZlZeJVfQJbVTtVhrU25WIxFS75Hdk4uAKBPb2v4+2whh9XLFk+/D9bFrSx7wnZAP/B0dZna7aRkhB04xBq30cML4QejWLUupiawHdAPhgadmFqSIAXOC5ayxsnCObApd9LIklrcuKn4oRNVUEdYtaR+l8TKVRvwID0DAGBm1hUhO/2ho60tNVpCS6v230Ehq18kEuHEqWimvcR1PlJuX8OxqF8RHhqMuKtnsX7NzzDo1BGdOnaA6yIXZuwfV67j2HHJrdiE8Y4QJFxB7O/HEB4ajEvnTsHTww3t2rUFAGQ9foKAoBBmvCycA1tQUEiW1OJmfOMJrDrCCgCVVb9Lwts3EJevxgEADDp1xP6QQLRq1ZIYLVHXQ6us/rw89nr7UtcFrC+Ero4OnKZ/ieiTUdix3Ys14wbt2su8t/20Pzw93Fj9qApxoN82pn346AmIyspYY6RxDuw7kYgsqcWz59lkSS1GGH4Ne2NnuEc+bNCwomqGjTpynNkJbN26FfaH7EAHfX1yKIusGVSarH4Dg46sdkBQCIqKhKwaAPB4PFhZ9mTaD9Iz8PjJU6b93bLFzHtSv769MaBfH6Dq4exmfCI5hME5sOWN5CRVkfDDv6yGxm+uBwcTF7hHPoSPGpaurl6/gS2efkDVDBey05/TEU1ZM6g0Wf08Hg/jxo5h2vtCD2Co3ReYNXcRIqKOIv2h7P/+xNsCVruiogKC5Ds1vgyNDJixtd1+cg5sEy3OQ1WqsPA1WWpwDsbqCysA/LRyHfN+vsts9LaxYvXXRNYMKq2m/g1rVsBhtB2rlnb3Hjy9AzBtpjO+mDANByKP4O3bEqb/DTELz1u0HM4Lltb4OhNznhmbm5vHulYa5xTq67cnS2rDZfmDVHhsglJe1cor/mF9vrqEhUeylqBUoUWLFtjuuxWHDuzFgnlzYGbWldX/IjsH3r6BmO3iyhwzbdasGWuMPN4UFZElBueNgzkurkhJvUuW1SL+2nno6bUmy7WKT38N2558xD7fTXbJrVXz9hhlPBurwu4hKPoJ2c2JvBsHVn0/Y7X79rFB2t17QNUC/tFDYTInFUFKKrPp0K1bF5w5eZgcwjgTcx6r1m0EAAwdMgh7dr3fcJAlJfUu/vzzPqJjzrO+MFOnTMQmt9WIjDqGbVUbFgCwPySQc4j5fD4se1mQZUCewK5c7YbYcxfJslo8SJN/pYA/+TQubh0Ga/NKHMxchzyRYkGrNspoTr1CW5/ABvp7YuiQQZg777+4/+AhAKCnRXdEhO/54Cn8YcYjfOU0l2nX9ncXEBSCfaEHAACODqPg5+1BDpFpX+gBZjmKp6sLQcIVPEjPwPSvJUtcEeF70L9vb6mrFMP5lsDKqhdZUos2bfTIEmdTNyfi/mMtzLHwgAHPjOyWy+Xcg7icEwHPeTZYPrF+nyWvYUM+g462NoJ3+MKg0/un+IzMLPz8ywZyKExNTVjtmNgLrHa1crEYZ2LOMW3p6y7+cRUZmTWffZ42VfLlE5WVQSQSwcqyJ7pIfcaOnXuY9zXhspPKObCD/jOALKlF27ZtyBJnJWV/fzShBYB27dpi904/Zla9FncTXj4BrDE8XV0MGmjLtLf5bGc2GqqVi8X4ZbUbXr7KZ2rjHB2Aqo2DzVt9MHXGHOzZFw6RjOXNS5evMe876OuDx+MBAFwXzmPqguQ7+P6n1SgufsvUqj19+gyuy37EmvWbya4PcL4lAIDBw8fI/AMb0rixY+C91Z0s10n68EtL3eY4sX6QWm8P6nNLcOf2dWhrf8K0b9xMgOuyH5n2+jU/w2n6l0w7SZACl4Xsgyx2w4eha1dTFBUJkXInjfXDoyNHfI6gAC8AQHBIKHaF7Je6EhgyeCC6m5uBx9PF8xc5iD0rmbW/XboYixdKfirYxz+ItTXbpo0ezLtJHtryXr5CTu5fTNtrizvGj5Mso5Garl21gvP//RfZOTWuuzWUhS6z0aO7OVmu09Yjklml4p9/cfpWHuxsTGDfYySevk1D6d81P5nW5X8ldwFoYdFwe5SI/kZSZt2ftdZJssjORXBIKPN+8UIXNGvWlGmbdjZB61atmAX3uBu30MfGGp07GwMAjIwM0dvaCtfi4lFR8f546LPnL5Ca9icyMh+h+K1kEho00BaeW9ygo6MDAOjR3Rz30zOQKxWq7OxcpN29B0FyKrKyJF/QcWPHYPXK75k2AAz5bCD4fD5uJdwGqtbz/8p7ybzelkiWwowMDfD1zGnQb99O6hPY5JphyRvphqalpYXEGxfRokULsqtOso4XqnOmlXeGret4IQAE7tyD1KqVHB6fB08PN9ZW7av8Avj6ByExKRlv3rC/VNZWvbBk8XwM/3wIq14t7sYtnPo9BvEJSXj37h1Tb9myBT7t3w9zZzvB9tP+rGuk5f6Vh9BfI3Dh0pUPliUte1lgrKM9nGZMhW7VF6UmcgUWAKbOmFPrDbgqSf9TJS9ZgYUaQytvYKn3OD90VVs4X7JE0tB+Ig4UK8PH9iD2sZM7sI4OozBk8ECyrHJO079kLZMoEw2t5pA7sACw2X1tjWcuVcGiR3es+HE5WVYqGlrNoFBgO3bQx3bfrWjaVPKkqipdTE0QtjeozptxZaChbfwUCiwAfD5sMOetO0U5OoxC+P5guc8N1AcNbeOmcGABwH7UCOwNDkD7WtbNFGHZywLhocHw8/aQeaBD1WhoGy+5l7VkKSkphYenb4371FzoaGvDccxozJg2hfP5TnnUtKxVG1UueXnOsyG7KQ6UEthqz55n48LFy/jjyrVad8R0dXRgZGQIc7OusLGxQm8bK6Wc5KmNIoGFCkNLKUapgZUmEonw5OkzvMjOQX5+AXpadAefz4eRoQHzU5INSdHAVlPF0URKfioLLEWpQr0euiiqodHAUhqFBpbSKDSwlEahgaU0Cg0spVFoYCmNQgNLaRQaWEqj0MBSGoUGltIo/wfAEWcCBtWQrwAAAABJRU5ErkJggg==" class="logo-corner" alt="Logo">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(78,205,196,.12) 0%,transparent 70%);"></div>
+  <div style="text-align:center;margin-bottom:20px;position:relative;z-index:1;">
+    <div style="background:rgba(78,205,196,.2);color:#4ECDC4;padding:6px 20px;border-radius:16px;display:inline-block;font-size:13px;font-weight:700;margin-bottom:10px;">🎨 圖像生成模型</div>
+    <h2 style="font-size:36px;font-weight:900;color:white;">插圖、簡報配圖、海報，<span style="color:#FFD166;">一鍵生成！</span></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;width:100%;max-width:900px;position:relative;z-index:1;">
+    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:24px 28px;display:flex;gap:18px;align-items:flex-start;">
+      <div style="font-size:36px;flex-shrink:0;">🍌</div>
+      <div>
+        <h3 style="font-size:17px;font-weight:900;color:#FFD166;margin-bottom:4px;">Nano Banana 2.0</h3>
+        <div style="background:rgba(78,205,196,.2);color:#4ECDC4;padding:2px 10px;border-radius:8px;font-size:12px;font-weight:700;display:inline-block;margin-bottom:10px;">點數省 💚</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.8);line-height:1.6;">輕量快速生圖<br>→ 插圖簡報、社群貼文素材</p>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:24px 28px;display:flex;gap:18px;align-items:flex-start;">
+      <div style="font-size:36px;flex-shrink:0;">🍌✨</div>
+      <div>
+        <h3 style="font-size:17px;font-weight:900;color:#FCD34D;margin-bottom:4px;">Nano Banana Pro</h3>
+        <div style="background:rgba(252,211,77,.2);color:#FCD34D;padding:2px 10px;border-radius:8px;font-size:12px;font-weight:700;display:inline-block;margin-bottom:10px;">點數適中 💛</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.8);line-height:1.6;">高階圖像生成、品質更佳<br>→ 快速概念草圖、大量批次生圖</p>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(110,231,183,.08);border:2px solid #6EE7B7;backdrop-filter:blur(10px);padding:24px 28px;display:flex;gap:18px;align-items:flex-start;">
+      <div style="font-size:36px;flex-shrink:0;">🖼️</div>
+      <div>
+        <h3 style="font-size:17px;font-weight:900;color:#6EE7B7;margin-bottom:4px;">GPT Image 2</h3>
+        <div style="background:rgba(110,231,183,.2);color:#6EE7B7;padding:2px 10px;border-radius:8px;font-size:12px;font-weight:700;display:inline-block;margin-bottom:10px;">⭐ 預設推薦 · 點數適中</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.8);line-height:1.6;">細節精準、支援文字渲染<br>→ 行銷素材、產品圖、簡報配圖</p>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(255,100,100,.08);border:1px solid rgba(255,100,100,.3);backdrop-filter:blur(10px);padding:24px 28px;display:flex;gap:18px;align-items:flex-start;">
+      <div style="font-size:36px;flex-shrink:0;">🔥</div>
+      <div>
+        <h3 style="font-size:17px;font-weight:900;color:#FCA5A5;margin-bottom:4px;">GPT Image Latest</h3>
+        <div style="background:rgba(255,100,100,.2);color:#FCA5A5;padding:2px 10px;border-radius:8px;font-size:12px;font-weight:700;display:inline-block;margin-bottom:10px;">最高品質 ⚠️ 點數較多</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.8);line-height:1.6;">GPT Image 最新版、品質最高<br>→ 追求最佳圖像品質時使用</p>
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:18px;font-size:14px;color:rgba(255,255,255,.6);position:relative;z-index:1;">💡 日常使用推薦 GPT Image 2（預設）；省點數選 Nano Banana 2.0</p>
 </div>
 
 <!-- S7 PLANS -->
@@ -331,7 +406,7 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);overflow:hidd
 
 </div>
 <div class="progress-bar" id="progressBar"></div>
-<div class="slide-counter" id="slideCounter">1 / 14</div>
+<div class="slide-counter" id="slideCounter">1 / 15</div>
 <div class="nav-hint">← → 鍵換頁，或點擊畫面</div>
 <script>
 const slides=document.querySelectorAll('.slide');
